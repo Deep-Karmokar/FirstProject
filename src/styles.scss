@@ -1,0 +1,813 @@
+@import "_config.scss";
+
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #258ea6;
+}
+
+.wrapper-posts {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top, #258ea6 0%, #fff 100%);
+}
+
+.wrapper-posts-page {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to top, #258ea6 0%, #fff 100%);
+}
+
+.createEventWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top, #258ea6 0%, #fff 100%);
+}
+
+.form-wrapper {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 50px #555;
+  background-color: #ffffff;
+}
+
+.form-wrapper-contactus {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 50px #555;
+  background-color: #ffffff;
+  align-content: center;
+  justify-content: center;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h1 {
+  text-align: center;
+  width: 100%;
+  color: #111;
+  font-weight: lighter;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+h2 {
+  text-align: center;
+  width: 100%;
+  color: #111;
+  font-weight: lighter;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+label {
+  font-size: 0.8em;
+  margin-bottom: 0.25em;
+  color: #222;
+  font-weight: lighter;
+}
+
+input {
+  padding: 10px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #cfcfcf;
+}
+
+textarea {
+  padding: 10px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #cfcfcf;
+}
+
+
+input::placeholder {
+  font-size: 1.2em;
+  font-weight: lighter;
+  color: #999;
+}
+
+textarea::placeholder {
+  font-size: 1.2em;
+  font-weight: lighter;
+  color: #999;
+}
+
+input.error {
+  border: 1px solid red;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 0.75em;
+  display: relative;
+}
+
+.firstName {
+  margin-right: 1%;
+}
+
+.lastName {
+  margin-left: 1%;
+}
+
+.firstName,
+.lastName,
+.email,
+.password {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.firstName,
+.lastName {
+  width: 49%;
+}
+
+.email,
+.password {
+  width: 100%;
+}
+
+.createAccount {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sendButton {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sendButton button {
+  background-color: #134652;
+  color: #fff;
+  border: 2px solid #fff;
+  width: 100%;
+  margin-top: 1em;
+  padding: 8px 0px;
+  font-size: 1em;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  margin-bottom: 0.25em;
+}
+
+.sendButton button:hover {
+  color: #134652;
+  background-color: #fff;
+  border: 2px solid #134652;
+  cursor: pointer;
+}
+
+.alreadyHaveAccount {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: lighter;
+}
+
+.alreadyHaveAccount button {
+  background-color: #fff;
+  color: #fff;
+  border: 2px solid #fff;
+  width: 60%;
+  padding: 2px 0px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  margin-bottom: 0.25em;
+  color: black;
+  padding: 4px 0px;
+  cursor: pointer;
+}
+
+.alreadyHaveAccount button:hover {
+  color: #519e8a;
+  background-color: #fff;
+  border: 1px solid #519e8a;
+}
+
+.createAccount button {
+  background-color: #519e8a;
+  color: #fff;
+  border: 2px solid #fff;
+  width: 100%;
+  margin-top: 1em;
+  padding: 8px 0px;
+  font-size: 1em;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  margin-bottom: 0.25em;
+}
+
+.createAccount button:hover {
+  color: #519e8a;
+  background-color: #fff;
+  border: 2px solid #519e8a;
+  cursor: pointer;
+}
+
+.createAccount small {
+  color: #999;
+  font-weight: lighter;
+}
+
+#App {
+  height: 100vh;
+}
+
+#page-wrap {
+  text-align: center;
+  overflow: auto;
+}
+
+.sidebarmenu {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2db0ce;
+}
+
+.menu-item {
+  align-items: center;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-bottom: 0.25em;
+  width: 100%;
+  padding: 8px 0px;
+  font-size: 1rem;
+}
+
+.alert {
+  text-align: center;
+  padding: 10px;
+  background: #258ea6;
+  color: white;
+  margin-bottom: 10px;
+  display: none;
+  font-weight: lighter;
+}
+
+.alertLogin {
+  text-align: center;
+  padding: 10px;
+  background: #258ea6;
+  color: white;
+  margin-bottom: 10px;
+  display: none;
+  font-weight: lighter;
+}
+
+.homepageTopText {
+  color: white;
+  text-align: left;
+}
+
+.icon {
+  align-items: right;
+}
+
+h3 {
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-weight: lighter;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.appBar {
+  display: inline-block;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 35px;
+  @include translateY(-50%);
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 25px;
+  font-weight: lighter;
+  font-style: italic
+}
+
+header {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: #258ea6;
+  color: rgb(112, 109, 109);
+  height: 80px;
+  margin-bottom: 0.25em;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgb(143, 143, 143);
+}
+
+
+nav {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  @include translateY(-50%);
+
+  ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 25px;
+
+    &.last {
+      margin: 0;
+    }
+  }
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.image:hover {
+  opacity: 1;
+}
+
+.text {
+  color: whitesmoke;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  top: 50%;
+  left: 20%
+}
+
+.middlePosts {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  top: 50%;
+  left: 41%
+}
+
+.middleProfile {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  top: 50%;
+  left: 63%
+}
+
+.middleLogout {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  top: 50%;
+  left: 85%
+}
+
+.container:hover .image {
+  opacity: 0;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.container:hover .middlePosts {
+  opacity: 1;
+}
+
+.container:hover .middleProfile {
+  opacity: 1;
+}
+
+.container:hover .middleLogout {
+  opacity: 1;
+}
+
+.link {
+  color: #FFF;
+}
+
+.eventPageContainer {
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+}
+
+h3 {
+  margin-left: 15px
+}
+
+
+.fileInput {
+  padding: 10px;
+  margin: 15px;
+  cursor: pointer;
+
+}
+
+.previewComponent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgPreview {
+  text-align: center;
+  margin: 5px 15px;
+  height: 200px;
+  width: 380px;
+  box-shadow: 0px 2px 20px #555;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+}
+
+
+.previewText {
+  width: 100%;
+  margin-top: 20px
+}
+
+
+.submitButton {
+  padding: 12px;
+  margin-left: 10px;
+  background: white;
+  border: 4px solid lightgray;
+  border-radius: 15px;
+  font-weight: 700;
+  font-size: 10pt;
+  cursor: pointer;
+
+  &:hover {
+    background: #efefef
+  }
+
+}
+
+
+.centerText {
+  text-align: center;
+  width: 500px
+}
+
+.card {
+  padding: 1em;
+  margin-bottom: 2em;
+  width: 925px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px #555;
+  background-color: white;
+}
+
+.card-Post {
+  justify-content: center;
+  margin-bottom: 2em;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px #555;
+  background-color: white;
+}
+
+.cardview {
+  align-items: center;
+  justify-content: center;
+  object-fit: contain
+}
+
+.moredetailsbutton {
+  padding: 0.5em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: lighter;
+}
+
+.moredetailsbutton button {
+  background-color: #134652;
+  color: #fff;
+  border: 2px solid #fff;
+  width: 30%;
+  margin-top: 0.5em;
+  padding: 8px 0px;
+  font-size: 1em;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  margin-bottom: 0.25em;
+  border-radius: 1em;
+  align-items: center;
+}
+
+.moredetailsbutton button:hover {
+  color: #258ea6;
+  background-color: #fff;
+  border: 1px solid #134652;
+}
+
+
+.bookButton {
+  padding: 0.5em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: lighter;
+}
+
+.bookButton button {
+  background-color: #e60052;
+  color: #fff;
+  border: 2px solid #fff;
+  width: 30%;
+  margin-top: 0.5em;
+  padding: 8px 0px;
+  font-size: 1em;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  margin-bottom: 0.25em;
+  border-radius: 1em;
+  align-items: center;
+}
+
+.bookButton button:hover {
+  color: #e60052;
+  background-color: #fff;
+  border: 1px solid #e60052;
+}
+
+.eventText {
+  text-align: center;
+  width: 100%;
+  color: #111;
+  padding: 0.5em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  align-items: center;
+}
+
+.eventBody {
+  margin-top: 1em;
+  background: linear-gradient(to top, #258ea6 0%, #fff 100%);
+}
+
+b {
+  color: #134652;
+  padding: 0.5em;
+}
+
+.imageFit {
+  object-fit: cover;
+  object-fit: contain;
+  width: 925px;
+}
+
+.noText {
+
+  cursor: pointer;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  /*This makes the button huge. If you want a bigger button, increase the font size*/
+  font-size: 50px;
+  /*Opacity settings for all browsers*/
+  opacity: 0;
+  -moz-opacity: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0)
+}
+
+.contactUsFont {
+  padding: 1em;
+  text-align: justify;
+  font-size: 20px
+}
+
+.contactUsFontFlex {
+  padding: 1em;
+  text-align: justify;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between
+}
+
+.form-wrapper-addposts {
+  width: 400px;
+  height: 600px;
+  margin: 5px;
+  background-color: #FFF;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  flex-direction: column;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 50px #555;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  position: relative
+}
+
+.form-wrapper-posts {
+  width: 300px;
+  height: 600px;
+  display: inline-block;
+  margin: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  flex-direction: column;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 25px #555;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  position: relative
+}
+
+.gridLayout {
+  justify-content: center;
+  flex-direction: row
+}
+
+.imageFitPost {
+  object-fit: cover;
+  width: 300px;
+  height: 500px;
+}
+
+h5 {
+  width: 100%;
+  font-style: italic;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.form-wrapper-confirm {
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  margin: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  flex-direction: column;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 25px #555;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  position: relative;
+  background-color: white;
+}
+
+.confirmButtonLineUp {
+  display: inline-flex;
+  flex-direction: row
+}
+
+.noButton {
+  margin-left: 1.5em
+}
+
+.noButton button {
+  background-color: red;
+  color: #fff;
+  border: 2px solid #fff;
+  width: 6em;
+  margin-top: 1em;
+  padding: 8px 0px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  margin-bottom: 0.25em;
+  border-radius: 20px;
+}
+
+.yesButton {
+  margin-right: 1.5em
+}
+
+.yesButton button {
+  background-color: green;
+  color: #fff;
+  border: 2px solid #fff;
+  width: 6em;
+  margin-top: 1em;
+  padding: 8px 0px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  margin-bottom: 0.25em;
+  border-radius: 20px;
+}
+
+.form-wrapper-conditions {
+  width: 100vh;
+  height: 100vmax;
+  display: inline-block;
+  margin: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  flex-direction: column;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 25px #555;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  position: relative;
+  background-color: white;
+}
+
+.termsText {
+  text-align: justify;
+  padding: 2em;
+}
+
+.displayUserName {
+  margin: 1px;
+  justify-content: center;
+  display: inline-flex;
+}
+
+.imageProfile {
+  object-fit: cover;
+  object-fit: contain;
+  width: 25%;
+  height: 25%;
+  border-radius: 100%
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
